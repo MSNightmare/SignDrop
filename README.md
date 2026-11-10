@@ -34,6 +34,9 @@ Since the calling process is privileged, the authentication file will be created
 If everything is chained correctly, funnily this legit security mitigation can be used against itself and allow an elevation if privileges. Everything is done properly by Microsoft here but the logic allows abuse.
 What makes it funnier is the fact that it can be used against any antimalware engine to bypass their self defense (or tamper protection) mechanism as you can trigger arbitrary file creation in the context of **their own antimalware process so from the perspective of their kernel drivers, the file creation request is coming from their own legit process so it passes, this makes this vulnerability unique as it can be used to turn off any antivirus/EDR.**
 
+<img width="2180" height="121" alt="Untitled" src="https://github.com/user-attachments/assets/91beb31a-5860-4c9e-98b7-ff9697c646e7" />
+
+
 The vulnerability has been tested in windows 11 26H2, Windows 11 26H2 Experimental, Windows Server 2025 Experimental
 <img width="1634" height="737" alt="poc" src="https://github.com/user-attachments/assets/a3c57b6a-849a-4549-a034-a7d7a19c2397" />
 
