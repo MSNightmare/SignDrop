@@ -6,6 +6,7 @@ To check, you need to run the proof of concept or check your registry configurat
 
 You might ask why, it's because it depends if the CLFS authentication mitigation is enabled or not, it's because of this : 
 https://windowsforum.com/news/clfs-authentication-mitigation-in-windows-90-day-learn-mode-for-log-files.396323/
+
 https://support.microsoft.com/en-us/servicing/os/windows/2025/03/common-log-file-system-clfs-authentication-mitigation
 
 From Microsoft :
