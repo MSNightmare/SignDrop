@@ -5,9 +5,8 @@ This vulnerability won't affect all windows machines but I guess estimate 80% of
 To check, you need to run the proof of concept or check your registry configuration, if it spawns a SYSTEM shell, you're vulnerable. And you're generally vulnerable if your windows installation is older than 90 days so it's safe to assume that everyone reading this is definitely vulnerable.
 
 You might ask why, it's because it depends if the CLFS authentication mitigation is enabled or not, it's because of this : 
-https://windowsforum.com/news/clfs-authentication-mitigation-in-windows-90-day-learn-mode-for-log-files.396323/
-
-https://support.microsoft.com/en-us/servicing/os/windows/2025/03/common-log-file-system-clfs-authentication-mitigation
+- https://windowsforum.com/news/clfs-authentication-mitigation-in-windows-90-day-learn-mode-for-log-files.396323/
+- https://support.microsoft.com/en-us/servicing/os/windows/2025/03/common-log-file-system-clfs-authentication-mitigation
 
 From Microsoft :
 > Currently, the adoption period lasts for 90 days, starting from the time in which the system was first started with this version of CLFS. After this 90-day adoption period has lapsed, the driver will automatically transition into enforcement mode on its next start, after which CLFS will expect all logfiles to contain valid authentication codes. Note that this 90-day value may change in the future.
