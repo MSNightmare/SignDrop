@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="SigDrop.vcxproj" Id="338cf3f6-730e-463b-9347-1c3e4fd7d5c1" />
+</Solution>
