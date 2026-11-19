@@ -1,7 +1,7 @@
 # SignDrop
 ## Windows Common Log FileSystem Authentication 0day Local Privilege Escalation Vulnerability
 
-This vulnerability won't affect all windows machines but I guess estimate 80% of the world's windows installations are vulnerable to this.
+This vulnerability won't affect all windows machines but I estimate 80% of the world's windows installations are vulnerable to this.
 To check, you need to run the proof of concept or check your registry configuration, if it spawns a SYSTEM shell, you're vulnerable. And you're generally vulnerable if your windows installation is older than 90 days so it's safe to assume that everyone reading this is definitely vulnerable.
 
 You might ask why, it's because it depends if the CLFS authentication mitigation is enabled or not, it's because of this : 
