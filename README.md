@@ -31,7 +31,7 @@ In this case, we can coerce any privileged process to open the log file after it
 Since the calling process is privileged, the authentication file will be created as SYSTEM... And what makes it worst is the fact that CLFS will always create the new authentication file with the original file DACL
 <img width="938" height="883" alt="clfs_device3" src="https://github.com/user-attachments/assets/f294c46f-8d3d-42b0-a2b3-94100b4393d7" />
 
-If everything is chained correctly, funnily this legit security mitigation can be used against itself and allow an elevation if privileges. Everything is done properly by Microsoft here but the logic allows abuse.
+If everything is chained correctly, funnily this legit security mitigation can be used against itself and allow an elevation of privileges. Everything is done properly by Microsoft here but the logic allows abuse.
 What makes it funnier is the fact that it can be used against any antimalware engine to bypass their self defense (or tamper protection) mechanism as you can trigger arbitrary file creation in the context of **their own antimalware process so from the perspective of their kernel drivers, the file creation request is coming from their own legit process so it passes, this makes this vulnerability unique as it can be used to turn off any antivirus/EDR.**
 
 <img width="2180" height="121" alt="Untitled" src="https://github.com/user-attachments/assets/91beb31a-5860-4c9e-98b7-ff9697c646e7" />
